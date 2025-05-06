@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Naidu Salon</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .header { background-color: #343a40; color: white; padding: 1rem; text-align: center; }
+    .footer { background-color: #343a40; color: white; padding: 1rem; text-align: center; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Naidu Salon</h1>
+    <p>बुक करें समय और पाएँ सुविधाजनक सेवाएँ</p>
+  </div>
+
+  <div class="container mt-4">
+    <h2>सेवाएँ</h2>
+    <ul>
+      <li>हेयरकट</li>
+      <li>शेव</li>
+      <li>मालिश (सिर, कंधा)</li>
+      <li>चेहरे की सफाई</li>
+      <li>बाल धोना</li>
+    </ul>
+
+    <h2 class="mt-4">बुकिंग फॉर्म</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">नाम</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="service" class="form-label">सेवा चुनें</label>
+        <select multiple class="form-select" id="service">
+          <option>हेयरकट</option>
+          <option>शेव</option>
+          <option>मालिश</option>
+          <option>चेहरे की सफाई</option>
+          <option>बाल धोना</option>
+        </select>
+        <small class="form-text text-muted">Ctrl दबाकर एक से अधिक सेवाएं चुनें</small>
+      </div>
+      <div class="mb-3">
+        <label for="slot" class="form-label">समय चुनें</label>
+        <input type="time" class="form-control" id="slot" required>
+      </div>
+      <button type="submit" class="btn btn-primary">बुक करें</button>
+    </form>
+
+    <h2 class="mt-5">दाम की सूची</h2>
+    <table class="table table-bordered">
+      <thead><tr><th>सेवा</th><th>मूल्य (INR)</th></tr></thead>
+      <tbody>
+        <tr><td>हेयरकट</td><td>₹60</td></tr>
+        <tr><td>शेव</td><td>₹40</td></tr>
+        <tr><td>मालिश</td><td>₹100</td></tr>
+        <tr><td>चेहरे की सफाई</td><td>₹120</td></tr>
+        <tr><td>बाल धोना</td><td>₹50</td></tr>
+      </tbody>
+    </table>
+
+    <h2 class="mt-5">संपर्क करें</h2>
+    <p>पता: मदन चौक, कामठी</p>
+  </div>
+
+  <div class="footer">
+    © 2025 Naidu Salon. सभी अधिकार सुरक्षित।
+  </div>
+</body>
+</html>
